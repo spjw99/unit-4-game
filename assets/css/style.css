@@ -1,0 +1,85 @@
+html,body{font-size: 12px;}
+body{
+    background-attachment: fixed;
+    background-image: url('../images/bg.jpg');
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.float-left{float:left;}
+.float-right{float:right;}
+.float-none{float:none;}
+.clearfix{clear:both;}
+.btn{cursor:pointer;background-color:rgb(0, 153, 204,0.3);
+color: #fff;
+padding: 30px 60px;
+border: 2px solid #fff;
+border-radius: .35rem;
+text-transform: uppercase;font-size:3rem}
+.btn:hover{background-color:rgb(3, 62, 82);}
+.section1,.section2{display:flex;width:100%;}
+.section2{display:none;}
+.left,.right{flex:1;margin: 50vh 0;color:#fff;text-align: center;cursor:pointer;}
+.left:hover,.right:hover{font-size:1.5em;}
+.container{flex:10;}
+.section_name,.character_name{text-align: center;font-size:4rem;text-transform: uppercase}
+.character_name{font-size:3rem;color:rgba(248, 225, 95, 0.5);text-shadow: -1px -1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff, 1px 1px 2px #fff;}
+.container{width:80%;color:#fff;}
+.character_info_scr,.your_info_scr,.enemy_info_scr{position:relative;width:30%;border:2px solid #fff;margin-right:20px;border-radius: .35rem;background-color: rgb(4, 31, 31);opacity:0.8;}
+.your_info_scr,.enemy_info_scr{width:27%;}
+.character_info_scr .hp_block,.character_info_scr .ap_block,.character_info_scr .cap_block,
+.your_info_scr .hp_block,.your_info_scr .ap_block,.your_info_scr .cap_block,
+.enemy_info_scr .hp_block,.enemy_info_scr .ap_block,.enemy_info_scr .cap_block
+{margin:20px 10px;background-color:rgb(0, 153, 204,0.3);}
+.character_info_scr .hp_block:hover,.character_info_scr .ap_block:hover,.character_info_scr .cap_block:hover,
+.your_info_scr .hp_block:hover,.your_info_scr .ap_block:hover,.your_info_scr .cap_block:hover,
+.enemy_info_scr .hp_block:hover,.enemy_info_scr .ap_block:hover,.enemy_info_scr .cap_block:hover
+{background-color:rgb(3, 62, 82);}
+.character_info_scr .info_block,
+.your_info_scr .info_block,
+.enemy_info_scr .info_block
+{margin:5px;background-color:rgb(1, 10, 10);}
+.character_info_scr .info_image,
+.your_info_scr .info_image,
+.enemy_info_scr .info_image
+{border:1px solid #fff;border-radius: .25rem;margin-right:10px;}
+.character_info_scr .info_text,
+.your_info_scr .info_text,
+.enemy_info_scr .info_text
+{font-size:2.2rem;line-height:4.5rem;min-height:56px;}
+.character_info_scr .info_text span,
+.your_info_scr .info_text span,
+.enemy_info_scr .info_text span
+{margin-right:20px;}
+.character_info_scr .hp,.character_info_scr .ap,.character_info_scr .cap,
+.your_info_scr .hp,.your_info_scr .ap,.your_info_scr .cap,
+.enemy_info_scr .hp,.enemy_info_scr .ap,.enemy_info_scr .cap
+{width:50px}
+
+.character_image_scr{width: 30%;padding-left:150px;}
+.character_image_scr .character_image{max-width: 200px;}
+
+.attack_btn_scr,.restart_btn_scr{width:40%}
+.restart_btn_scr{display: none;}
+.attack_btn_scr .attack,.restart_btn_scr .restart{width:160px;margin: 0 auto;}
+
+@media (max-width:1368px){
+    html,body{font-size:8px}
+    .section1 .character_image_scr{padding-left:0px}
+    .section2 .character_image_scr{padding-left:0px}
+    .section2 .character_image_scr .character_image{max-width:200px!important;margin-left:0!important;}
+    .attack_btn_scr .attack, .restart_btn_scr .restart{width:110px}
+}
+@media (max-width:1200px){
+    html,body{font-size:8px}
+}
+@media (max-width:980px){
+    html,body{font-size:7px}
+}
+@media (max-width:640px){
+    html,body{font-size:7px}
+}
+
+*{
+    /*outline:1px dotted gray;*/
+}
